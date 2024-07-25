@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HM STORE</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style >
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+.header{
+	height: 95vh;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://antdisplay.com/pub/media/magefan_blog/optical_store_design_6_.jpg); 
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+
+}
+.nav-item
+{
+	color: white;
+	display: inline-block;
+	margin-top: 1rem;
+}
+.logo{
+	color: white;
+	font-size: 35px;
+
+}
+/*################ utiliti classis#####################*/
+.container{
+	max-width: 1100px;
+	width: 90%;
+	margin: 0 auto;
+}
+.red{
+		color:#e63946;
+}
+.light{
+		color: #f4f4f4;
+}
+.black{
+		color:#333333; 
+}
+.grey{
+		color: #555555;
+}
+.v{
+	color: white;
+	padding: 1rem;
+}
+.v:hover{
+	color: white;
+	text-decoration: none;
+
+}
+.v:hover{
+	border-bottom: 1px solid white;
+	padding-bottom: 0.2rem;
+}
+
+.header-content h1{
+	text-transform:uppercase;
+	font-weight: 700;
+}
+.header-content p{
+	text-transform: uppercase;
+}
+.header-content{
+	
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	background: transparent;
+
+}
+.btn{
+	background:#f4f4f4;
+	color: #e63946;
+	border: 2px solid white;
+	border-radius: 40px;
+	padding: 0.5em;
+	text-transform: uppercase;
+	border: 2px solid #e63946;
+}
+.btn:hover{
+	background: #e63946 ;
+	color: white;
+	border-radius: 40px;
+	border: 2px solid #e63946;
+}
+.div{
+	padding: 50px;
+}
+.row{
+	height: 240px;
+	
+}
+.row1{
+	margin-bottom: 50px;
+	box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+.row2
+{
+	box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+
+}
+.col1{
+	background-image: url(in.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+.col11{
+	background-image: url(nm.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.col2{
+	padding: 30px;
+	background: white;
+}
+.hu{
+	background: #ddd;
+}
+.btn-sacondry{
+	border: 2px solid #e63946;
+	color: #e63946;
+	border-radius: 1.5em;
+	background: white;
+	width: 100px;
+	text-decoration: none;
+}
+.btn-sacondry:hover{
+	background: #ddd;
+	color: #e63946;
+}
+.btn:hover{
+	background: #ddd;
+	color: #e63946;
+}
+
+.n{
+	height: 250px;
+}
+.ft{
+	padding: 5rem 0;
+}
+.box-wrapper{
+	box-shadow:  -4px 2px 10px black;
+}
+.box{
+	width: 33.3333333%;
+	float: left;
+	text-align: center;
+	padding: 1rem 2rem 0rem 2rem;
+}
+.box-wrapper::after
+{
+	content: '';
+	display: block;
+	clear: both;
+}
+html{
+	scroll-behavior: smooth;
+}
+.box1{
+	background-color: #263238;
+	color: white;
+}
+.box2{
+	background:linear-gradient(25deg,#d64c7f,#ee4758 50%);
+	color: white;
+}
+.box3{
+	background-color: #263238;
+	color: white;
+}
+.a{
+	height: 30px;
+}
+.pn{
+	height: 3rem;
+	margin: 1rem;
+}
+.footer{
+	background: #263238;
+	height: 7.5rem;
+
+}
+.er{
+	color: white;
+}
+.arrow-up{
+	height: 40px;
+	margin-bottom: 10px;
+}
+.img2{
+		height: 235px;
+    	margin-left: -8px;
+    	margin-top: -130px;
+		transform: perspective(1000px) rotateY(-20deg) rotateX(10deg);
+		transition: 0.5s ease;
+	}
+	.img2:hover{
+	
+		transform: scale(1.1);
+	}
+	.welcom{
+		
+	}
+</style>
+</head>
+<body>
+	<header class="header">
+		<div class="navbar" id="top">
+			<div class="container">
+				<h1 class="logo">HM STORE </h1>
+				<ul class="nav-items">
+					<li class="nav-item"><a href="index.html" class="v">Home</a></li>
+					<li class="nav-item"><a href="About.html" class="v">About</a></li>
+					<li class="nav-item"><a href="Contact.html" class="v">Contact</a></li>
+
+				</ul>
+			</div>
+		</div>
+		<div class="header-content">
+			<img src="phone.png" class="img2">
+			<div class="welcom">
+				<h1 class="light ">Welcome to HM Store</h1>
+			<p class="light">The Owner of this Store Sami Malik and Hamid Malik Keep the Shopping</p>
+			<a href="#try" class="btn"><b>View The Store</b> </a>
+			</div>
+			
+			
+		</div>
+	</header>
+	<div class="fluid hu" id="try">
+		<div class="container div">
+			<div class="row row1">
+				<div class="col-md-6 col1">
+				
+				</div>
+				<div class="col-md-6 col2">
+					<h3>New Design</h3>
+					<P>This Glasses Use Karan Aujla. This is very very populer glasses and uniq design.</P>
+					<a href="#" class="btn btn-sacondry">Buy Now</a>
+				</div>
+
+			</div>
+			<div class="row row2 ">
+				<div class="col-md-6 col2">
+					<h3>Stylish Sunglasses</h3>
+					<P>An amazing accessory to enhance your style statement is Sunglasses.They are trendy and never really go out of style.</P>
+					<a href="#" class="btn btn-sacondry">Buy Now</a>
+
+				</div>
+				<div class="col-md-6 col11"> </div>
+			</div>
+		</div>
+	</div>
+	<div class="ft">
+		<div class="container">
+			<div class="box-wrapper">
+				<div class="box box1">
+					<img src="p.png" class="a">
+					<h2>Sunglasses</h2>
+					<p>This is very beautiful glasses its very priceless and comfertabel and uniq design.</p>
+				</div>
+				<div class="box box2">
+					<img src="s.png" class="a">
+
+					<h2>Sportglasses</h2>
+					<p>This glasses use in sports its very useful and priceless in which <br>difirents colours.</p>
+				</div>
+				<div class="box box3">
+					<img src="m.png" class="a">
+
+					<h2>Roundglasses</h2>
+					<p>This glasses use in skubadiving the fisherman use it and enjoy his life its price is very low.</p>
+				</div>
+
+			</div>
+			
+		</div>
+		
+	</div>
+	<a href="#top">
+	<img src="arrow-up.png" class="arrow-up">
+		
+	</a>
+	<center>
+	<div class="fluid footer">
+		<a href="https://www.tiktok.com/@luckymh12?_t=8ohuvp2z0ww&_r=1"><img src="face.png" class="pn"> </a>
+		<a href="https://www.instagram.com/hamidalimalik6063?igsh=Znlwcm51bHUycGQ0"><img src="insta.png" class="pn"></a>
+		<a href="https://www.facebook.com/profile.php?id=61556947296963&mibextid=ZbWKwL"><img src="twi.png" class="pn"></a>
+		<p class="er">All glasses in the World Availabe Here</p>
+	</div>
+	</center>
+	
+</body>
+</html>
